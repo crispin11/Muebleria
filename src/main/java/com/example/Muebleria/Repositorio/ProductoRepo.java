@@ -27,3 +27,4 @@ public interface ProductoRepo extends JpaRepository<Producto,Integer> {
     @Procedure(name = "Gkardex")
     List<Kardex>Kardex();
 }
+ 

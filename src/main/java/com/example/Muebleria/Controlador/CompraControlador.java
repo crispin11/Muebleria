@@ -22,7 +22,7 @@ public class CompraControlador {
         return  servi.ObtenerTodo();
     }
     @GetMapping("/buscarid/{id}")
-    public Optional<CompraDto> Buscar(@PathVariable("id") Integer id){
+    public Optional<CompraDto> Buscar(@PathVariable("id") Long id){
         return  servi.Buscar(id);
     }
 

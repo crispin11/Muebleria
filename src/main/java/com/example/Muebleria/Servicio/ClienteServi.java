@@ -1,6 +1,7 @@
 package com.example.Muebleria.Servicio;
 import com.example.Muebleria.Modelo.Cliente;
-import com.example.Muebleria.Repositorio.ClienteRepo;
+import com.example.Muebleria.Repositorio.ClienteRepository.ClienteRepo;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

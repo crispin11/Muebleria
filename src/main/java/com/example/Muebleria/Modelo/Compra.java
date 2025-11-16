@@ -12,7 +12,7 @@ import java.util.Date;
 public class Compra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     @ManyToOne
     @JoinColumn(name = "id_proveedor")
     private Proveedor proveedor;
@@ -24,15 +24,15 @@ public class Compra {
 
     public Compra() {}
 
-    public Compra(Integer id) {
+    public Compra(Long id) {
         this.id = id;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

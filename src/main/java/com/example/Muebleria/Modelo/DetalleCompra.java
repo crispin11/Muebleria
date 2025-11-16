@@ -8,7 +8,7 @@ import lombok.Data;
 public class DetalleCompra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     @ManyToOne
     @JoinColumn(name = "id_compra")
     private Compra compra;
@@ -19,10 +19,10 @@ public class DetalleCompra {
     private Double precioCompra;
     private Double subtotal;
     private boolean estado;
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public Compra getCompra() {

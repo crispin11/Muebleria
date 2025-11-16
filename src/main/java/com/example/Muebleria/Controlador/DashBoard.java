@@ -2,6 +2,7 @@ package com.example.Muebleria.Controlador;
 import com.example.Muebleria.Dto.ProductoDto;
 import com.example.Muebleria.Modelo.Producto;
 import com.example.Muebleria.Repositorio.*;
+import com.example.Muebleria.Repositorio.ClienteRepository.ClienteRepo;
 import com.example.Muebleria.Servicio.ProductoServi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

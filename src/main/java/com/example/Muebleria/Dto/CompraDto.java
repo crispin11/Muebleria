@@ -10,7 +10,7 @@ import java.util.Date;
 @Data
 public class CompraDto {
 
-    private Integer id;
+    private Long id;
     private String proveedor;
     @Temporal(TemporalType.TIMESTAMP)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss.SSS")
@@ -18,7 +18,7 @@ public class CompraDto {
     private Double total;
     private boolean estado;
 
-    public CompraDto(Integer id, String proveedor, LocalDateTime fecha, Double total, boolean estado) {
+    public CompraDto(Long id, String proveedor, LocalDateTime fecha, Double total, boolean estado) {
         this.id = id;
         this.proveedor = proveedor;
         this.fecha = fecha;

@@ -27,7 +27,7 @@ public class CompraServi {
                 .collect(Collectors.toList());
     }
 
-    public Optional<CompraDto> Buscar(Integer id){
+    public Optional<CompraDto> Buscar(Long id){
         return repo.findById(id)
                 .map(compra -> new CompraDto(
                         compra.getId(),
